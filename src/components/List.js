@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
-//import "./List.css"
+import Table from 'react-bootstrap/Table'
+import "./List.css"
 
 function List() {
   const [users, setUsers] = useState([])
@@ -15,7 +16,9 @@ useEffect(() => {
       }
  return(
      <>
-    <table>
+     <h1>EmpLoyees</h1>
+     <Table striped bordered hover variant="dark">
+  <thead>
     <tr>
       <th>First Name</th>
       <th>Last Name</th>
@@ -25,7 +28,9 @@ useEffect(() => {
       <th>Password</th>
       <th>About</th>
     </tr>
-    {users.map(user=>{
+  </thead>
+  <tbody>
+  {users.map(user=>{
         return(
   <tr>
       <td>{user.firstName}</td>
@@ -35,10 +40,11 @@ useEffect(() => {
       <td>{user.email}</td>
       <td>{user.password}</td>
       <td>{user.about}</td>
-    </tr>
-        )
+    </tr>  )
     })}
-  </table>
+  </tbody>
+</Table>
+  
   </>
  )   
 }
