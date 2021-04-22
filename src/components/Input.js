@@ -37,7 +37,7 @@ function Input() {
 
   return (
     <>
-      <h1>Registration System</h1>
+      <h2>Form</h2>
       <Form className="form" onSubmit={handleSubmit}>
         <Form.Group className="form-group" controlId="formBasicEmail">
           <Form.Label>First Name</Form.Label>

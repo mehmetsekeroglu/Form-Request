@@ -5,10 +5,17 @@ import List from './components/List'
 import Container from 'react-bootstrap/Container'
 import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
+import Navbar from 'react-bootstrap/Navbar'
 
 function App() {
   return (
-    <Container>
+    <Container fluid>
+      <Navbar  sticky="top" variant="dark" bg="dark">
+  <Container>
+    <Navbar.Brand href="#">Registration System</Navbar.Brand>
+  </Container>
+</Navbar>
+      
   <Row>
     <Col><Input/></Col>
     <Col><List/></Col>

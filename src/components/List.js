@@ -16,7 +16,7 @@ useEffect(() => {
       }
  return(
      <>
-     <h1>EmpLoyees</h1>
+     <h2>Employees</h2>
      <Table striped bordered hover variant="dark">
   <thead>
     <tr>
