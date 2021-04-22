@@ -12,17 +12,18 @@ function Input() {
   const [user, setUser] = useReducer(formReducer, {});
   const handleSubmit = e => {
     e.preventDefault()
+    console.log(user)
     fetch("http://174.138.103.233/api/employees", {
-        headers: {
+          headers: {
             'Accept': 'application/json',
             'Content-Type': 'application/json'
           },
           method: "POST",
           body: JSON.stringify(user)
-  
     })
       .then(res => res.json())
       .then(json => setUser(json.user))
+
   }
   
   const handleChange = event => {
@@ -40,16 +41,20 @@ function Input() {
           <label>
             <span>First Name</span>
             <input name="firstName" onChange={handleChange}/>
-          </label> <label>
+          </label>
+          <label>
             <span>Last Name</span>
             <input name="lastName" onChange={handleChange}/>
-          </label> <label>
+          </label>
+          <label>
             <span>Gender</span>
             <input name="gender" onChange={handleChange}/>
-          </label> <label>
+          </label>
+          <label>
             <span>Birthday</span>
-            <input name="birthday" onChange={handleChange}/>
-          </label> <label>
+            <input type="date" name="birthday" onChange={handleChange}/>
+          </label>
+          <label>
             <span>E-Mail</span>
             <input name="email" onChange={handleChange}/>
           </label>
@@ -61,7 +66,6 @@ function Input() {
             <span>About</span>
             <input name="about" onChange={handleChange}/>
           </label>
-          
         </fieldset>
         <button type="submit">Submit</button>
       </form>
