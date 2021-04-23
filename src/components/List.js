@@ -16,7 +16,7 @@ function List() {
   return (
     <>
       <h2>Employees</h2>
-      <Table striped bordered hover variant="dark">
+      <Table striped bordered hover variant="success">
         <thead>
           <tr>
             <th>First Name</th>

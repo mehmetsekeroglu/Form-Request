@@ -1,6 +1,11 @@
 .form{
-    background-color: rgb(160, 199, 236);
-    padding: 3vw;
+   /* background-color: rgb(160, 199, 236);*/
+    padding: 2vw;
+    width: 30vw;
+    margin-left: 3.5vw;
+    border-radius: 25px;
 }
-
+h2{
+ text-align: center;
+}
 

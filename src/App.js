@@ -9,15 +9,15 @@ import Navbar from 'react-bootstrap/Navbar'
 
 function App() {
   return (
-    <Container fluid>
+    <Container fluid className="bg-secondary">
       <Navbar sticky="top" variant="dark" bg="dark">
         <Container>
-          <Navbar.Brand href="#">Registration System</Navbar.Brand>
+          <Navbar.Brand href="#">HiCoders</Navbar.Brand>
         </Container>
       </Navbar>
       <Row>
-        <Col><Input /></Col>
-        <Col><List /></Col>
+        <Col><Input/></Col>
+        <Col><List/></Col>
       </Row>
     </Container>
   );

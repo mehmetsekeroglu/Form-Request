@@ -26,8 +26,8 @@ function Input() {
     })
       .then(res => res.json())
       .then(json => setUser(json.user))
-
   }
+
 
   const handleChange = event => {
     setUser({
@@ -38,8 +38,9 @@ function Input() {
   
   return (
     <>
-      <h2>Form</h2>
-      <Form className="form" onSubmit={handleSubmit}>
+      <h2>Online Registration</h2>
+      <Form className="form d-flex flex-column align-items-center bg-info" onSubmit={handleSubmit}>
+      <h3>Registration Form</h3>
         <Form.Group className="form-group">
           <Form.Label>First Name</Form.Label>
           <Form.Control name="firstName" onChange={handleChange} type="text" placeholder="Enter First Name" />
@@ -68,7 +69,7 @@ function Input() {
           <Form.Label>About</Form.Label>
           <Form.Control name="about" onChange={handleChange} type="text" placeholder="About" />
         </Form.Group>
-        <Button variant="primary" type="submit">
+        <Button variant="warning" type="submit">
           Submit
   </Button>
       </Form>
