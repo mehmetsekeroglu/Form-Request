@@ -10,17 +10,16 @@ import Navbar from 'react-bootstrap/Navbar'
 function App() {
   return (
     <Container fluid>
-      <Navbar  sticky="top" variant="dark" bg="dark">
-  <Container>
-    <Navbar.Brand href="#">Registration System</Navbar.Brand>
-  </Container>
-</Navbar>
-      
-  <Row>
-    <Col><Input/></Col>
-    <Col><List/></Col>
-  </Row>
-</Container>
+      <Navbar sticky="top" variant="dark" bg="dark">
+        <Container>
+          <Navbar.Brand href="#">Registration System</Navbar.Brand>
+        </Container>
+      </Navbar>
+      <Row>
+        <Col><Input /></Col>
+        <Col><List /></Col>
+      </Row>
+    </Container>
   );
 }
 
