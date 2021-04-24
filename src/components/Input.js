@@ -24,8 +24,6 @@ function Input() {
       method: "POST",
       body: JSON.stringify(user)
     })
-      .then(res => res.json())
-      .then(json => setUser(json.user))
   }
 
 
